@@ -7,7 +7,7 @@ function App() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="main-container" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+    <div className="main-container" style={{ display: "flex", flexDirection: "row", justifyContent: "center", width: "100vh", height: "100vh" }}>
       <div>
         <div className="container">
           <div className="container-login">
