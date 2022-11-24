@@ -4,8 +4,9 @@ import SelectForm from "./SelectForm";
 import styled from "styled-components";
 
 function App() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [Professores, setProfessores] = useState("");
+  const [Disciplina, setDisciplina] = useState("");
+  const [Turmas, setTurmas] = useState("");
 
   return (
     <div className="div-Geral">
@@ -16,7 +17,6 @@ function App() {
           flexDirection: "row",
           justifyContent: "center",
           width: "100vh",
-          height: "100vh",
         }}
       >
         <div>
@@ -25,16 +25,15 @@ function App() {
               <div className="wrap-login">
                 <form className="login-form">
                   <span className="login-form-title">
-                    {" "}
                     Cadastro Professores
                   </span>
                   <span className="login-form-title"></span>
                   <div className="wrap-input">
                     <input
-                      className={email !== "" ? "has-val input" : "input"}
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      className={Professores !== "" ? "has-val input" : "input"}
+                      type="Professores"
+                      value={Professores}
+                      onChange={(e) => setProfessores(e.target.value)}
                     />
                     <span
                       className="focus-input"
@@ -59,10 +58,10 @@ function App() {
                   <span className="login-form-title"></span>
                   <div className="wrap-input">
                     <input
-                      className={email !== "" ? "has-val input" : "input"}
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      className={Disciplina !== "" ? "has-val input" : "input"}
+                      type="Disciplina"
+                      value={Disciplina}
+                      onChange={(e) => setDisciplina(e.target.value)}
                     />
                     <span
                       className="focus-input"
@@ -87,10 +86,10 @@ function App() {
                   <span className="login-form-title"></span>
                   <div className="wrap-input">
                     <input
-                      className={email !== "" ? "has-val input" : "input"}
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      className={Turmas !== "" ? "has-val input" : "input"}
+                      type="Turmas"
+                      value={Turmas}
+                      onChange={(e) => setTurmas(e.target.value)}
                     />
                     <span
                       className="focus-input"
